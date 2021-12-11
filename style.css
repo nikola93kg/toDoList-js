@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(120deg, #95D8F7, #4491FF);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.wrapper {
+    margin: 100px auto;
+    max-width: 600px;
+}
+.background-generator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.background-generator h3 {
+    font-family: monospace;
+    font-weight: 500;
+}
+.background-generator input {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #0001;
+    border-radius: 50%;
+    background: none;
+}
+.background-generator input:hover {
+    cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+    border-radius: 50%;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+    border-radius: 50%;
+}
+.clr-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clr-wrap input {
+    margin: 10px;
+    margin-top: 20px;
+}
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 0px 7px #0001;
+    padding: 20px;
+}
+.todo .col input, .col button {
+    border: none;
+    background: #fff9;
+    padding: 5px;
+    border-radius: 5px;
+    /* color: #fff; */
+    outline: none;
+    caret-color: #f008;
+}
+.todo input {
+    min-width: 250px;
+}
+.todo .col button {
+    padding: 10px;
+    background: #f008;
+    margin-left: 10px;
+    min-width: 80px;
+}
+.todo .col {
+    padding: 10px;
+    display: flex;
+}
+.todo-list {
+    margin-top: 50px;
+
+}
+.todo-list .col {
+    box-shadow: 10px 0px 7px #0001;
+    max-width: 400px;
+    padding: 10px;
+}
+ul {
+    font-family: monospace;
+    font-size: 1.4em;
+}
+li:hover {
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}

@@ -1,9 +1,9 @@
 // Background generator
 
-var css = document.querySelector('h3');
-var color1 = document.querySelector('.color1');
-var color2 = document.querySelector('.color2');
-var body = document.getElementById('gradient');
+let css = document.querySelector('h3');
+let color1 = document.querySelector('.color1');
+let color2 = document.querySelector('.color2');
+let body = document.getElementById('gradient');
 
 function setGradient() {
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
@@ -20,13 +20,13 @@ color2.addEventListener('input', setGradient);
 
 // Todo list
 
-var input = document.getElementById('input');
-var button = document.getElementById('btn');
-var ul = document.querySelector('ul');
-var allLi = document.querySelectorAll('li');
+let input = document.getElementById('input');
+let button = document.getElementById('btn');
+let ul = document.querySelector('ul');
+let allLi = document.querySelectorAll('li');
 
 function createLiAfterClick() {
-    var li = document.createElement('li');
+    let li = document.createElement('li');
         li.appendChild(document.createTextNode(input.value));
         ul.appendChild(li);
         input.value = '';
